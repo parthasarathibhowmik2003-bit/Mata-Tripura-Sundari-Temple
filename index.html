@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mata Tripura Sundari Temple | Udaipur, Tripura | Shakti Peetha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Noto+Serif+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --sacred-red: #C41E3A;
+            --deep-red: #8B0000;
+            --gold: #D4AF37;
+            --light-gold: #F4E4BC;
+            --cream: #FFF8E7;
+            --dark: #1a1a1a;
+            --white: #ffffff;
+            --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F4E4BC 50%, #D4AF37 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--cream);
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--cream);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--sacred-red);
+            border-radius: 5px;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(139, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 15px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .logo i {
+            font-size: 2rem;
+            animation: rotate 10s linear infinite;
+        }
+
+        .logo-text {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu {
+            display: none;
+            color: var(--gold);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(139, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), 
+                        url('https://kimi-web-img.moonshot.cn/img/s7ap1.scene7.com/31cdb4e7df4b04ee502d1d110da711ec1bb8ab1a');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 1.5s ease;
+        }
+
+        .om-symbol {
+            font-size: 4rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+            display: block;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .hero h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            color: var(--white);
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            letter-spacing: 3px;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            color: var(--light-gold);
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .hero .tagline {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background: var(--gradient-gold);
+            color: var(--deep-red);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--gold);
+        }
+
+        .btn-secondary:hover {
+            background: var(--gold);
+            color: var(--deep-red);
+            transform: translateY(-3px);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator i {
+            color: var(--gold);
+            font-size: 2rem;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: var(--deep-red);
+            text-align: center;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--gold);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 50px;
+            font-size: 1.1rem;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: 10px;
+            bottom: 10px;
+            border: 3px solid var(--gold);
+            border-radius: 20px;
+            z-index: -1;
+        }
+
+        .about-content h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            color: var(--deep-red);
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, var(--sacred-red), var(--deep-red));
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 30px;
+            border-left: 5px solid var(--gold);
+        }
+
+        .highlight-box h4 {
+            color: var(--gold);
+            margin-bottom: 10px;
+            font-family: 'Cinzel', serif;
+        }
+
+        /* History Timeline */
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3px;
+            height: 100%;
+            background: var(--gold);
+        }
+
+        .timeline-item {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 50%;
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        .timeline-item:nth-child(even) {
+            justify-content: flex-start;
+            padding-right: 0;
+            padding-left: 50%;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            width: 90%;
+            position: relative;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .timeline-content:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+        }
+
+        .timeline-content::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--gold);
+            border-radius: 50%;
+            top: 30px;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content::before {
+            right: -60px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::before {
+            left: -60px;
+        }
+
+        .timeline-year {
+            font-family: 'Cinzel', serif;
+            color: var(--sacred-red);
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        /* Architecture Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 350px;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(139, 0, 0, 0.9));
+            padding: 30px 20px 20px;
+            color: white;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-overlay h4 {
+            font-family: 'Cinzel', serif;
+            color: var(--gold);
+            margin-bottom: 5px;
+        }
+
+        /* Rituals & Festivals */
+        .rituals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .ritual-card {
+            background: white;
+            border-radius: 20px;
+            padding: 35px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ritual-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-gold);
+        }
+
+        .ritual-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .ritual-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--sacred-red), var(--deep-red));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: var(--gold);
+            font-size: 2rem;
+        }
+
+        .ritual-card h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--deep-red);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .ritual-card p {
+            color: #666;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        /* Festivals Special */
+        .festival-banner {
+            background: linear-gradient(135deg, var(--deep-red), var(--sacred-red));
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            color: white;
+            margin: 40px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .festival-banner::before {
+            content: '❋';
+            position: absolute;
+            font-size: 20rem;
+            opacity: 0.05;
+            top: -50px;
+            right: -50px;
+            color: var(--gold);
+        }
+
+        .festival-banner h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .festival-dates {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .festival-date-item {
+            background: rgba(255,255,255,0.1);
+            padding: 20px 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .festival-date-item .date {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        .festival-date-item .label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Visitor Info */
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-top: 4px solid var(--gold);
+            transition: transform 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: var(--sacred-red);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .info-card h4 {
+            font-family: 'Cinzel', serif;
+            color: var(--deep-red);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .info-card p, .info-card ul {
+            color: #555;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .info-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-card ul li {
+            padding: 5px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .info-card ul li:last-child {
+            border-bottom: none;
+        }
+
+        .timing-highlight {
+            background: var(--cream);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            border-left: 4px solid var(--sacred-red);
+        }
+
+        .timing-highlight strong {
+            color: var(--deep-red);
+        }
+
+        /* Map Section */
+        .map-container {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+            height: 450px;
+            position: relative;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Photo Gallery Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+            box-shadow: 0 0 50px rgba(212, 175, 55, 0.3);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            color: var(--gold);
+            font-size: 3rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .lightbox-close:hover {
+            transform: rotate(90deg);
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--dark), #2a0a0a);
+            color: white;
+            padding: 60px 20px 30px;
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-section h4 {
+            font-family: 'Cinzel', serif;
+            color: var(--gold);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .footer-section p, .footer-section a {
+            color: rgba(255,255,255,0.8);
+            line-height: 1.8;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--gold);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(212, 175, 55, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--gold);
+            color: var(--deep-red);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-20px); }
+            60% { transform: translateX(-50%) translateY(-10px); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .mobile-menu {
+                display: block;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            .timeline::before {
+                left: 20px;
+            }
+            .timeline-item,
+            .timeline-item:nth-child(even) {
+                justify-content: flex-start;
+                padding-left: 50px;
+                padding-right: 0;
+            }
+            .timeline-item:nth-child(odd) .timeline-content::before,
+            .timeline-item:nth-child(even) .timeline-content::before {
+                left: -40px;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Floating Diya Animation */
+        .diya {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--deep-red);
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+            z-index: 999;
+            animation: float 3s ease-in-out infinite;
+            text-decoration: none;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .diya:hover {
+            transform: scale(1.1);
+        }
+
+        /* Shakti Peetha Badge */
+        .shakti-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--sacred-red), var(--deep-red));
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            border: 2px solid var(--gold);
+        }
+
+        .shakti-badge i {
+            color: var(--gold);
+        }
+
+        /* Testimonials / Quotes */
+        .quote-section {
+            background: linear-gradient(135deg, rgba(139, 0, 0, 0.05), rgba(212, 175, 55, 0.05));
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+
+        .quote-text {
+            font-family: 'Noto Serif Devanagari', serif;
+            font-size: 1.5rem;
+            color: var(--deep-red);
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            line-height: 1.8;
+        }
+
+        .quote-author {
+            color: var(--sacred-red);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-om"></i>
+                <span class="logo-text">Mata Tripura Sundari</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="#rituals">Rituals</a></li>
+                <li><a href="#visit">Plan Visit</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="om-symbol">ॐ</span>
+            <div class="shakti-badge">
+                <i class="fas fa-star"></i>
+                One of the 51 Shakti Peethas
+            </div>
+            <h1>Mata Tripura Sundari Temple</h1>
+            <p class="subtitle">Udaipur, Tripura, India</p>
+            <p class="tagline">
+                Experience divine serenity at one of the holiest Shakti Peethas in India. 
+                Where the right foot of Goddess Sati fell, blessing devotees with spiritual awakening 
+                and eternal peace for over 500 years.
+            </p>
+            <div class="cta-buttons">
+                <a href="#visit" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i> Plan Your Visit
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <i class="fas fa-book-open"></i> Learn More
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2 class="section-title">About the Temple</h2>
+        <p class="section-subtitle">Discover the spiritual significance of this ancient Shakti Peetha</p>
+        
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="https://kimi-web-img.moonshot.cn/img/sacredsites.com/1478a13f653a9d9cf0d9b668a1b28021880eb0bd.webp" alt="Tripura Sundari Temple Main Shrine">
+            </div>
+            <div class="about-content">
+                <h3>The Abode of the Universal Mother</h3>
+                <p>
+                    Mata Tripura Sundari Temple, also known as <strong>Matabari</strong>, is one of the 51 
+                    <em>Shakti Peethas</em> spread across the Indian subcontinent. Located in the ancient city 
+                    of Udaipur, the erstwhile capital of Tripura, this temple holds immense religious significance 
+                    for devotees of Shakti (the Divine Mother).
+                </p>
+                <p>
+                    According to sacred texts, this is the place where the <strong>right foot (Sripada)</strong> of 
+                    Goddess Sati fell when Lord Shiva performed the Tandava dance carrying her burnt body. The temple 
+                    enshrines the sacred idol of Goddess Tripura Sundari, also worshipped as <em>Devi Tripureshwari</em> 
+                    — the supreme deity of Tripura.
+                </p>
+                <p>
+                    The temple is built in the unique <strong>Bengali hut-type architecture</strong> with a distinctive 
+                    square sanctum topped by a conical dome. The main idol, made of reddish-black <em>Kasti stone</em> 
+                    (also called <em>Chaturdasha Devata</em>), represents the goddess in her benign form with 14 gods 
+                    and goddesses surrounding her.
+                </p>
+                
+                <div class="highlight-box">
+                    <h4><i class="fas fa-gem"></i> Sacred Significance</h4>
+                    <p>
+                        The temple is considered one of the most important pilgrimage sites in Eastern India. 
+                        Devotees believe that a visit to this temple washes away sins and grants spiritual liberation. 
+                        The goddess here is worshipped as the Supreme Power who governs the three worlds — 
+                        <em>Bhuh (Earth), Bhuvah (Atmosphere), and Svah (Heaven)</em>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <div class="section">
+        <div class="quote-section">
+            <p class="quote-text">
+                "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत ।<br>
+                अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम् ॥"
+            </p>
+            <p class="quote-author">— Bhagavad Gita 4:7</p>
+            <p style="margin-top: 15px; color: #666; font-size: 0.9rem;">
+                "Whenever there is a decline in righteousness and rise of unrighteousness, O Bharata,<br>
+                then I manifest Myself in every age to protect the good and destroy the wicked."
+            </p>
+        </div>
+    </div>
+
+    <!-- History Timeline -->
+    <section class="section" id="history" style="background: white; border-radius: 30px; margin: 20px auto; box-shadow: 0 10px 40px rgba(0,0,0,0.05);">
+        <h2 class="section-title">Sacred History</h2>
+        <p class="section-subtitle">Journey through the divine timeline of Mata Tripura Sundari</p>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">Mythological Era</div>
+                    <h4 style="color: var(--deep-red); margin-bottom: 10px;">The Legend of Shakti Peetha</h4>
+                    <p>
+                        According to the Devi Bhagavata Purana and Kalika Purana, when Goddess Sati 
+                        immolated herself in her father Daksha's yajna, Lord Shiva carried her body across 
+                        the universe. Vishnu's Sudarshan Chakra divided the body into 51 parts, which fell 
+                        at different places — the <em>Shakti Peethas</em>. The right foot of Sati fell at 
+                        Udaipur, Tripura.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">15th Century</div>
+                    <h4 style="color: var(--deep-red); margin-bottom: 10px;">Temple Construction</h4>
+                    <p>
+                        The present temple structure was built by <strong>Maharaja Dhanya Manikya</strong> 
+                        of the Manikya dynasty around 1501 CE. The king, a devout Shakta, established this 
+                        temple after receiving divine instructions in a dream. The temple became the spiritual 
+                        center of the Tripura kingdom.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">16th-18th Century</div>
+                    <h4 style="color: var(--deep-red); margin-bottom: 10px;">Royal Patronage & Expansion</h4>
+                    <p>
+                        Successive Manikya rulers including Maharaja Ratna Manikya and Maharaja Rama Manikya 
+                        expanded the temple complex. The Kalyan Sagar (sacred pond) was excavated, and various 
+                        subsidiary shrines were added. The temple received royal patronage and became the state 
+                        deity of Tripura.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">Present Day</div>
+                    <h4 style="color: var(--deep-red); margin-bottom: 10px;">National Heritage & Pilgrimage</h4>
+                    <p>
+                        Today, the temple is maintained by the Government of Tripura and the Temple Trust. 
+                        It attracts millions of devotees annually, especially during Diwali (Deepavali Mela) 
+                        and the Ashwin Navratri. The temple has been recognized as a monument of national 
+                        importance and continues to be the spiritual heartbeat of Tripura.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section class="section" id="architecture">
+        <h2 class="section-title">Temple Architecture</h2>
+        <p class="section-subtitle">Marvel at the unique Bengali hut-style architecture and sacred structures</p>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://kimi-web-img.moonshot.cn/img/s7ap1.scene7.com/4eeb2ffc748cc22ed1f2936b571cce8608936d27" alt="Main Temple Structure">
+                <div class="gallery-overlay">
+                    <h4>Main Sanctum (Garbhagriha)</h4>
+                    <p>The square sanctum with conical dome built in traditional Bengali hut-style architecture</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://kimi-web-img.moonshot.cn/img/dynamic-media-cdn.tripadvisor.com/2ae175a475ff6bcb2297dfe84af81c38a47b7ced.jpg" alt="Kalyan Sagar Lake">
+                <div class="gallery-overlay">
+                    <h4>Kalyan Sagar Lake</h4>
+                    <p>The sacred pond adjacent to the temple, home to rare turtles considered divine messengers</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://kimi-web-img.moonshot.cn/img/maa-tripurasundari.com/66f015e65d43504dacf4341d44701ec2f65e3aa7.jpg" alt="Temple Complex">
+                <div class="gallery-overlay">
+                    <h4>Temple Complex</h4>
+                    <p>The white arched corridors and the iconic red dome against the blue sky</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <div class="info-card">
+                <i class="fas fa-place-of-worship"></i>
+                <h4>Architectural Style</h4>
+                <p>
+                    The temple follows the <strong>Bengal hut-type (Chala)</strong> architectural style with a 
+                    square base and a conical dome (shikhara). The exterior is painted in sacred red color, 
+                    symbolizing the divine energy of Shakti. The structure is built without using any iron 
+                    in its core construction.
+                </p>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-gopuram"></i>
+                <h4>The Sacred Idol</h4>
+                <p>
+                    The main idol is made of <em>Kasti stone</em> (also called Chaturdasha Devata), a rare 
+                    reddish-black stone. The goddess is depicted in a benign form with four arms, holding 
+                    various divine weapons. The idol is surrounded by 14 smaller deities representing the 
+                    <em>Chaturdasha Devata</em> tradition of Tripura.
+                </p>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-water"></i>
+                <h4>Kalyan Sagar</h4>
+                <p>
+                    The sacred tank (Kalyan Sagar) covers approximately 6 acres. It is believed that the 
+                    water has healing properties. The tank is famous for its population of rare soft-shell 
+                    turtles (<em>Nilssonia nigricans</em>) which are considered sacred and fed by devotees.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rituals & Festivals -->
+    <section class="section" id="rituals">
+        <h2 class="section-title">Rituals & Festivals</h2>
+        <p class="section-subtitle">Participate in ancient traditions and vibrant celebrations</p>
+        
+        <div class="rituals-grid">
+            <div class="ritual-card">
+                <div class="ritual-icon">
+                    <i class="fas fa-sun"></i>
+                </div>
+                <h3>Daily Puja & Aarti</h3>
+                <p>
+                    The temple follows strict daily rituals starting from <strong>Mangala Aarti at 4:00 AM</strong>. 
+                    The day includes multiple puja sessions — Bhoga offering, Sandhya Aarti, and Shayan Aarti. 
+                    Special <em>Bali</em> (sacrifice) rituals are performed on Tuesdays and Saturdays.
+                </p>
+            </div>
+            
+            <div class="ritual-card">
+                <div class="ritual-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <h3>Kumari Puja</h3>
+                <p>
+                    During Navratri, the temple performs the sacred <strong>Kumari Puja</strong> where young 
+                    girls are worshipped as manifestations of the Divine Mother. This ritual symbolizes the 
+                    purity and divine feminine energy present in every woman.
+                </p>
+            </div>
+            
+            <div class="ritual-card">
+                <div class="ritual-icon">
+                    <i class="fas fa-drum"></i>
+                </div>
+                <h3>Chant & Music</h3>
+                <p>
+                    Devotional music using traditional instruments like <em>khol, kartal, and harmonium</em> 
+                    fills the temple premises. The <strong>Shyama Sangeet</strong> (devotional songs dedicated 
+                    to Kali) and <em>bhajans</em> create a spiritually charged atmosphere during evening aartis.
+                </p>
+            </div>
+            
+            <div class="ritual-card">
+                <div class="ritual-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Anna Dana</h3>
+                <p>
+                    The temple runs a massive <strong>free meal service (Anna Dana)</strong> for devotees, 
+                    especially during festivals. The <em>Maha Prasad</em> is considered highly auspicious and 
+                    is distributed to thousands of pilgrims daily during major celebrations.
+                </p>
+            </div>
+            
+            <div class="ritual-card">
+                <div class="ritual-icon">
+                    <i class="fas fa-yin-yang"></i>
+                </div>
+                <h3>Tantric Practices</h3>
+                <p>
+                    Being a Shakti Peetha, the temple preserves ancient <strong>Tantric traditions</strong>. 
+                    Special rituals are performed by qualified priests following the <em>Kulachara</em> and 
+                    <em>Samayachara</em> paths. The temple is one of the few places where authentic Shakta 
+                    practices continue in their original form.
+                </p>
+            </div>
+            
+            <div class="ritual-card">
+                <div class="ritual-icon">
+                    <i class="fas fa-hands-praying"></i>
+                </div>
+                <h3>Havan & Yajna</h3>
+                <p>
+                    Regular <strong>fire rituals (Havan)</strong> are conducted in the temple's yajna-shala. 
+                    During major festivals, grand <em>Maha Yajnas</em> are performed with thousands of devotees 
+                    participating. The sacred fire is believed to carry prayers directly to the Divine Mother.
+                </p>
+            </div>
+        </div>
+
+        <!-- Festival Banner -->
+        <div class="festival-banner">
+            <h3><i class="fas fa-calendar-star"></i> Major Festivals</h3>
+            <p style="max-width: 700px; margin: 0 auto; line-height: 1.8; opacity: 0.9;">
+                The temple comes alive during festivals with elaborate decorations, special rituals, 
+                and lakhs of devotees seeking blessings. The most significant celebrations are:
+            </p>
+            <div class="festival-dates">
+                <div class="festival-date-item">
+                    <div class="date">Diwali Mela</div>
+                    <div class="label">October/November</div>
+                    <p style="margin-top: 10px; font-size: 0.85rem; opacity: 0.8;">
+                        7-day grand festival with Deepotsav (lighting of 1 lakh+ diyas)
+                    </p>
+                </div>
+                <div class="festival-date-item">
+                    <div class="date">Navratri</div>
+                    <div class="label">Ashwin Month</div>
+                    <p style="margin-top: 10px; font-size: 0.85rem; opacity: 0.8;">
+                        9 days of special puja, Kumari Puja, and cultural programs
+                    </p>
+                </div>
+                <div class="festival-date-item">
+                    <div class="date">Kali Puja</div>
+                    <div class="label">Kartik Amavasya</div>
+                    <p style="margin-top: 10px; font-size: 0.85rem; opacity: 0.8;">
+                        Grand night-long celebrations with special tantric rituals
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visitor Information -->
+    <section class="section" id="visit" style="background: white; border-radius: 30px; margin: 20px auto; box-shadow: 0 10px 40px rgba(0,0,0,0.05);">
+        <h2 class="section-title">Plan Your Visit</h2>
+        <p class="section-subtitle">Everything you need to know for a blessed pilgrimage</p>
+        
+        <div class="info-cards">
+            <div class="info-card">
+                <i class="fas fa-clock"></i>
+                <h4>Darshan Timings</h4>
+                <div class="timing-highlight">
+                    <strong>Summer (Apr-Oct):</strong><br>
+                    Morning: 5:00 AM - 1:00 PM<br>
+                    Evening: 4:00 PM - 9:00 PM
+                </div>
+                <div class="timing-highlight" style="margin-top: 10px;">
+                    <strong>Winter (Nov-Mar):</strong><br>
+                    Morning: 5:30 AM - 1:00 PM<br>
+                    Evening: 3:30 PM - 8:30 PM
+                </div>
+                <p style="margin-top: 15px; font-size: 0.85rem; color: var(--sacred-red);">
+                    <i class="fas fa-info-circle"></i> Special aartis at 4:00 AM, 12:00 PM, and 7:30 PM
+                </p>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-ticket"></i>
+                <h4>Entry & Offerings</h4>
+                <ul>
+                    <li><strong>Entry:</strong> Free for all devotees</li>
+                    <li><strong>Special Darshan:</strong> ₹50-₹200</li>
+                    <li><strong>Puja Booking:</strong> Available at temple office</li>
+                    <li><strong>Prasad:</strong> Available from ₹20</li>
+                    <li><strong>Photography:</strong> Restricted in sanctum</li>
+                    <li><strong>Shoe Storage:</strong> Free facility available</li>
+                </ul>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>How to Reach</h4>
+                <ul>
+                    <li><strong>By Air:</strong> Maharaja Bir Bikram Airport, Agartala (55 km)</li>
+                    <li><strong>By Rail:</strong> Udaipur Railway Station (3 km)</li>
+                    <li><strong>By Road:</strong> Well connected via NH8</li>
+                    <li><strong>Local:</strong> Auto-rickshaws, taxis available</li>
+                    <li><strong>From Agartala:</strong> 1.5 hours by road</li>
+                </ul>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-bed"></i>
+                <h4>Accommodation</h4>
+                <ul>
+                    <li><strong>Temple Dharamshala:</strong> Free basic stay</li>
+                    <li><strong>PWD Bungalow:</strong> Government rest house</li>
+                    <li><strong>Hotels in Udaipur:</strong> ₹800-₹3000/night</li>
+                    <li><strong>Agartala Hotels:</strong> Wider range available</li>
+                    <li><strong>Booking:</strong> Advance recommended during festivals</li>
+                </ul>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-utensils"></i>
+                <h4>Nearby Facilities</h4>
+                <ul>
+                    <li><strong>Prasad Hall:</strong> Free meals during festivals</li>
+                    <li><strong>Local Eateries:</strong> Bengali & Tripuri cuisine</li>
+                    <li><strong>Medical:</strong> Udaipur District Hospital nearby</li>
+                    <li><strong>ATM:</strong> Available within 1 km</li>
+                    <li><strong>Shopping:</strong> Religious items, local crafts</li>
+                </ul>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h4>Visitor Guidelines</h4>
+                <ul>
+                    <li>Dress modestly (traditional attire preferred)</li>
+                    <li>Remove shoes before entering temple</li>
+                    <li>Maintain silence in the sanctum area</li>
+                    <li>Do not touch the main idol</li>
+                    <li>Feeding turtles in Kalyan Sagar is allowed with temple-provided food</li>
+                    <li>Mobile phones should be on silent mode</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Map -->
+        <div style="margin-top: 50px;">
+            <h3 style="font-family: 'Cinzel', serif; color: var(--deep-red); text-align: center; margin-bottom: 30px; font-size: 1.5rem;">
+                <i class="fas fa-map"></i> Temple Location
+            </h3>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.953284768037!2d91.4816!3d23.5333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3753f3c3c3c3c3c3%3A0x3c3c3c3c3c3c3c3c!2sTripura%20Sundari%20Temple!5e0!3m2!1sen!2sin!4v1234567890" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="section" id="gallery">
+        <h2 class="section-title">Divine Gallery</h2>
+        <p class="section-subtitle">Glimpses of spiritual grandeur and architectural beauty</p>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://kimi-web-img.moonshot.cn/img/risingnepaldaily.com/49d97a7c094c592a4166d08969c70d2d4c3cc4b5.jpg" alt="Festival Celebrations">
+                <div class="gallery-overlay">
+                    <h4>Grand Festivals</h4>
+                    <p>Thousands of devotees gather during Diwali Mela</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://kimi-web-img.moonshot.cn/img/tripuratoday.com/03fcd0f9b99c3d1d82f65c519423a207c78b0af8.jpg" alt="Diwali Celebrations">
+                <div class="gallery-overlay">
+                    <h4>Diwali Deepotsav</h4>
+                    <p>The temple illuminated with thousands of diyas during Diwali</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://kimi-web-img.moonshot.cn/img/s7ap1.scene7.com/31cdb4e7df4b04ee502d1d110da711ec1bb8ab1a" alt="Temple Dome">
+                <div class="gallery-overlay">
+                    <h4>The Sacred Dome</h4>
+                    <p>The iconic red conical dome against the blue sky</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://kimi-web-img.moonshot.cn/img/sacredsites.com/1478a13f653a9d9cf0d9b668a1b28021880eb0bd.webp" alt="Temple View">
+                <div class="gallery-overlay">
+                    <h4>Panoramic View</h4>
+                    <p>The complete temple complex with arched corridors</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://kimi-web-img.moonshot.cn/img/maa-tripurasundari.com/66f015e65d43504dacf4341d44701ec2f65e3aa7.jpg" alt="Temple Architecture">
+                <div class="gallery-overlay">
+                    <h4>Architectural Detail</h4>
+                    <p>Close-up of the dome and kalasha</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://kimi-web-img.moonshot.cn/img/dynamic-media-cdn.tripadvisor.com/2ae175a475ff6bcb2297dfe84af81c38a47b7ced.jpg" alt="Kalyan Sagar">
+                <div class="gallery-overlay">
+                    <h4>Kalyan Sagar Lake</h4>
+                    <p>The sacred water body with temple reflection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <h2 class="section-title">Contact & Connect</h2>
+        <p class="section-subtitle">Reach out for queries, bookings, and spiritual guidance</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <div class="info-card" style="text-align: center;">
+                <i class="fas fa-phone-alt"></i>
+                <h4>Phone Numbers</h4>
+                <p>
+                    <strong>Temple Office:</strong> +91-3821-222-XXX<br>
+                    <strong>Booking Enquiry:</strong> +91-3821-223-XXX<br>
+                    <strong>Emergency:</strong> +91-94361-XXXXX
+                </p>
+            </div>
+            
+            <div class="info-card" style="text-align: center;">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p>
+                    <strong>General:</strong> info@tripurasundari.tripura.gov.in<br>
+                    <strong>Donations:</strong> donate@tripurasundari.tripura.gov.in<br>
+                    <strong>Media:</strong> media@tripurasundari.tripura.gov.in
+                </p>
+            </div>
+            
+            <div class="info-card" style="text-align: center;">
+                <i class="fas fa-address-card"></i>
+                <h4>Postal Address</h4>
+                <p>
+                    <strong>Mata Tripura Sundari Temple Trust</strong><br>
+                    Matabari, Udaipur<br>
+                    Gomati District, Tripura - 799120<br>
+                    India
+                </p>
+            </div>
+        </div>
+
+        <div class="quote-section" style="margin-top: 50px;">
+            <p class="quote-text">
+                "सर्वमंगल मांगल्ये शिवे सर्वार्थ साधिके ।<br>
+                शरण्ये त्र्यम्बके गौरि नारायणि नमोऽस्तु ते ॥"
+            </p>
+            <p class="quote-author">— Devi Mahatmyam</p>
+            <p style="margin-top: 15px; color: #666; font-size: 0.9rem;">
+                "O All-auspicious One, giver of all good, O auspicious Shiva, accomplisher of all objectives,<br>
+                O refuge of the three worlds, O Gauri, O Narayani, salutations to You."
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4><i class="fas fa-om"></i> Mata Tripura Sundari</h4>
+                <p>
+                    One of the 51 Shakti Peethas, this ancient temple in Udaipur, Tripura, 
+                    is a beacon of spiritual light for millions of devotees. Experience divine 
+                    grace and eternal peace at the abode of the Universal Mother.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="#about">About Temple</a></p>
+                <p><a href="#history">History</a></p>
+                <p><a href="#rituals">Rituals & Festivals</a></p>
+                <p><a href="#visit">Plan Your Visit</a></p>
+                <p><a href="#gallery">Photo Gallery</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Important Info</h4>
+                <p><a href="#">Temple Timings</a></p>
+                <p><a href="#">How to Reach</a></p>
+                <p><a href="#">Accommodation</a></p>
+                <p><a href="#">Donations</a></p>
+                <p><a href="#">Temple Trust</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Matabari, Udaipur, Tripura - 799120</p>
+                <p><i class="fas fa-phone"></i> +91-3821-222-XXX</p>
+                <p><i class="fas fa-envelope"></i> info@tripurasundari.tripura.gov.in</p>
+                <p><i class="fas fa-globe"></i> www.tripurasundari.tripura.gov.in</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 Mata Tripura Sundari Temple Trust. All Rights Reserved.</p>
+            <p style="margin-top: 10px; font-size: 0.8rem;">
+                Government of Tripura | Ministry of Culture | Archaeological Survey of India
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating Diya Button -->
+    <a href="#home" class="diya" title="Back to Top">
+        <i class="fas fa-om"></i>
+    </a>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="Gallery Image" id="lightbox-img">
+    </div>
+
+    <script>
+        // Lightbox functionality
+        function openLightbox(element) {
+            const img = element.querySelector('img');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = img.src;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(139, 0, 0, 0.98)';
+                navbar.style.padding = '10px 0';
+            } else {
+                navbar.style.background = 'rgba(139, 0, 0, 0.95)';
+                navbar.style.padding = '15px 0';
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and timeline items
+        document.querySelectorAll('.ritual-card, .info-card, .timeline-item, .gallery-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Mobile menu toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenu.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            navLinks.style.position = 'absolute';
+            navLinks.style.top = '100%';
+            navLinks.style.left = '0';
+            navLinks.style.right = '0';
+            navLinks.style.background = 'rgba(139, 0, 0, 0.98)';
+            navLinks.style.flexDirection = 'column';
+            navLinks.style.padding = '20px';
+            navLinks.style.gap = '15px';
+        });
+
+        // Add parallax effect to hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            hero.style.backgroundPositionY = -(scrolled * 0.5) + 'px';
+        });
+    </script>
+</body>
+</html>
